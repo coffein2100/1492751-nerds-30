@@ -22,6 +22,74 @@
     </nav>
   </header>
 
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section>
+      <h2>Фильтр товаров</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" min="1" max="15000">
+          от <input type="number" min="0" max="15000" id="amount" name="amount" value="0">
+          до <input type="number" min="0" max="15000" id="amount" name="amount2" value="15000">
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+            <input type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+            <input type="radio" name="fix" value="fix" id="filter-fix">
+            <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="flex" value="flex" id="filter-flex">
+              <label for="filter-flex">Резиновая</label>
+              </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slayder" id="filter-slayder" checked>
+              <label for="filter-slayder">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="block" id="filter-block">
+              <label for="filter-block">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="galery" id="filter-galery">
+              <label for="filter-galery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          <ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>  
+
+    <section>
+      <h2>Сортировать</h2>
+      <ul>
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По названию</li>
+      </ul>
+    </section>
+
+  </main>
 
 </body>
 </html>
