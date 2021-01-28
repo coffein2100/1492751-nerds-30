@@ -23,19 +23,19 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1>Магазин готовых шаблонов</h1>
 
-    <section>
+    <section class="productfilter">
       <h2>Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
+        <fieldset class="Productfilter cost">
           <legend>Стоимость</legend>
           <input type="range" min="1" max="15000">
           от <input type="number" min="0" max="15000" id="amount" name="amount" value="0">
           до <input type="number" min="0" max="15000" id="amount2" name="amount2" value="15000">
         </fieldset>
-        <fieldset>
+        <fieldset class="productfilter grid">
           <legend>Сетка:</legend>
           <ul>
             <li>
@@ -52,7 +52,7 @@
               </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="productfilter features">
           <legend>Особенности</legend>
           <ul>
             <li>
@@ -77,16 +77,16 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button" type="submit">Показать</button>
       </form>
     </section>  
 
-    <section>
+    <section class="filterfeatures">
       <h2>Сортировать</h2>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
+      <ul class="filterfeatures-list">
+        <li class="filterfeatures-item"><a href="#">По цене</a></li>
+        <li class="filterfeatures-item"><a href="#">По типу</a></li>
+        <li class="filterfeatures-item"><a href="#">По названию</a></li>
       </ul>
     </section>
 
@@ -147,23 +147,23 @@
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
 
-    <section>
+    <section class="footer-social">
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-button" href="#">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section class="discounts">
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
