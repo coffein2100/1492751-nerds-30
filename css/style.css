@@ -9,6 +9,7 @@
   --basic-specional:#666666;
   --basic-land:#666666;
   --basic-footer:#444444;
+  --basic-nav:#FB565A;
   }
 
 /* Global */
@@ -34,6 +35,38 @@ img {
   height: auto;
 }
 
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-head);
+  text-transform: uppercase;
+}
+.site-navigation {
+  list-style: none;
+}
+/* User navigation */
+
+
+.site-navigation a,
+.basket-link a{
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket-link a:hover,
+.basket-link a:focus{
+  color: var(--basic-nav);
+}
+
+.site-navigation a:active,
+.basket-link a:active {
+  color: var(--basic-black);
+  text-decoration: underline var(--basic-nav);
+}
 
 
 
