@@ -11,8 +11,15 @@
   --basic-footer:#444444;
   --basic-nav:#FB565A;
   --basic-butleft:#FB565A;
+  --basic-butlefthover:#E74246;
+  --basic-butleftfocus:#D7373B;
   --basic-butcenter:#00CA74;
+  --basic-butcenterhover:#00BC6C;
+  --basic-butcenterfocus:#00AA62;
   --basic-butright:#EFC849;
+  --basic-bitrighthover:#EAB534;
+  --basic-butrightfocus:#E5A722;
+
   }
 
 /* Global */
@@ -70,6 +77,7 @@ img {
   color: var(--basic-black);
   text-decoration: underline var(--basic-nav);
 }
+
 /* opportunities */
 
 .opportunities-list {
@@ -90,5 +98,123 @@ img {
   color: var(--basic-extra);
 }
 
+.button-left {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-butleft);
+  line-height: 18px;
+  text-align: center;
+}
+.button-left:hover{
+    background-color:var(--basic-butlefthover);
+}
+.button-left:focus{
+  color:rgba(255,255,255, 0.3);
+  background-color:var(--basic-butleftfocus);
+}
 
+.button-center {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-butcenter);
+  line-height: 18px;
+  text-align: center;
+}
+.button-center:hover{
+    background-color:var(--basic-butcenterhover);
+}
+.button-center:focus{
+  color:rgba(255,255,255, 0.3);
+  background-color:var(--basic-butcenterfocus);
+}
 
+.button-right {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-butright);
+  line-height: 18px;
+  text-align: center;
+}
+.button-right:hover{
+    background-color:var(--basic-bitrighthover);
+}
+.button-right:focus{
+  color:rgba(255,255,255, 0.3);
+  background-color:var(--basic-butrightfocus);
+}
+
+/*presentation*/
+
+.presentation h1{
+  font-size: 45px;
+  line-height: 45px;
+}
+.presentation h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.presentation p{
+  text-align: left;
+  color: var(--basic-extra);
+}
+
+.presentation-list{
+  color: var(--basic-extra);
+  list-style: none;
+  list-style-position: outside;
+}
+.presentation-item{
+  background: url("../img/marker.svg") no-repeat left center;
+  padding-left: 40px;
+}
+
+/*features*/
+
+.features h3{
+  text-transform: uppercase;
+}
+
+.features-list th{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--basic-black);
+}
+.features-list sup{
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.features-list tr:last-child{
+  color: var(--basic-extra);
+  text-align: center;
+  line-height: 18px;
+}
+
+/*partners*/
+
+.partners-list {
+  list-style: none;
+}
+
+/*footer*/
+
+.social-list{
+  list-style: none;
+  text-transform: uppercase;
+}
+.social-list a{
+  color: var(--basic-black);
+}
+.discounts h2{
+  text-align: left;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+.discounts p{
+  text-align: left;
+  color: var(--basic-footer);
+}
