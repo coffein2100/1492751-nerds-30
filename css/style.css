@@ -74,6 +74,7 @@ img {
 
 .opportunities-list {
   list-style: none;
+  background-color: var(--basic-white);
 }
 
 .opportunities-item {
