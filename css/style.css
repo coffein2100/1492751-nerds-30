@@ -10,6 +10,9 @@
   --basic-land:#666666;
   --basic-footer:#444444;
   --basic-nav:#FB565A;
+  --basic-butleft:#FB565A;
+  --basic-butcenter:#00CA74;
+  --basic-butright:#EFC849;
   }
 
 /* Global */
@@ -67,9 +70,24 @@ img {
   color: var(--basic-black);
   text-decoration: underline var(--basic-nav);
 }
+/* opportunities */
 
+.opportunities-list {
+  list-style: none;
+}
 
+.opportunities-item {
+  text-align: left;
 
+}
+.opportunities-item h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+.opportunities-item p{
+  color: var(--basic-extra);
+}
 
 
 
