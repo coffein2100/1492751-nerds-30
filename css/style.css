@@ -192,19 +192,20 @@ img {
 .features h3{
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .features-list th{
   font-size: 45px;
   line-height: 64px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-black);
 }
 .features-list sup{
   font-size: 26px;
   line-height: 40px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .features-list tr:last-child{
