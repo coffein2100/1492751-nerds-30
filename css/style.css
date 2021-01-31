@@ -49,6 +49,7 @@ img {
 
 .main-navigation {
   font-size: 16px;
+  font-weight: normal;
   line-height: 30px;
   color: var(--basic-black);
   background-color: var(--basic-head);
@@ -70,12 +71,14 @@ img {
 .basket-link a:hover,
 .basket-link a:focus{
   color: var(--basic-nav);
+  font-weight: normal;
 }
 
 .site-navigation a:active,
 .basket-link a:active {
   color: var(--basic-black);
   text-decoration: underline var(--basic-nav);
+  font-weight: normal;
 }
 
 /* opportunities */
@@ -93,6 +96,7 @@ img {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
+  font-weight: bold;
 }
 .opportunities-item p{
   color: var(--basic-extra);
@@ -100,6 +104,7 @@ img {
 
 .button-left {
   text-transform: uppercase;
+  font-weight: normal;
   color: var(--basic-white);
   background-color: var(--basic-butleft);
   line-height: 18px;
@@ -107,14 +112,17 @@ img {
 }
 .button-left:hover{
     background-color:var(--basic-butlefthover);
+    font-weight: normal;
 }
 .button-left:focus{
   color:rgba(255,255,255, 0.3);
   background-color:var(--basic-butleftfocus);
+  font-weight: normal;
 }
 
 .button-center {
   text-transform: uppercase;
+  font-weight: normal;
   color: var(--basic-white);
   background-color: var(--basic-butcenter);
   line-height: 18px;
@@ -122,10 +130,12 @@ img {
 }
 .button-center:hover{
     background-color:var(--basic-butcenterhover);
+    font-weight: normal;
 }
 .button-center:focus{
   color:rgba(255,255,255, 0.3);
   background-color:var(--basic-butcenterfocus);
+  font-weight: normal;
 }
 
 .button-right {
@@ -134,24 +144,30 @@ img {
   background-color: var(--basic-butright);
   line-height: 18px;
   text-align: center;
+  font-weight: normal;
 }
 .button-right:hover{
     background-color:var(--basic-bitrighthover);
+    font-weight: normal;
 }
 .button-right:focus{
   color:rgba(255,255,255, 0.3);
   background-color:var(--basic-butrightfocus);
+  font-weight: normal;
 }
 
 /*presentation*/
 
 .presentation h1{
+  font-weight: normal;
   font-size: 45px;
   line-height: 45px;
 }
 .presentation h3 {
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: left;;
 }
 .presentation p{
   text-align: left;
@@ -172,6 +188,7 @@ img {
 
 .features h3{
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .features-list th{
@@ -189,7 +206,7 @@ img {
 
 .features-list tr:last-child{
   color: var(--basic-extra);
-  text-align: center;
+  text-align: left;
   line-height: 18px;
 }
 
@@ -209,10 +226,11 @@ img {
   color: var(--basic-black);
 }
 .discounts h2{
-  text-align: left;
-  font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  text-align: left;
+  font-weight: bold;
+
 }
 .discounts p{
   text-align: left;
