@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
   <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -16,75 +19,76 @@
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a class="catalog-active" href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a class="basket-link" href="#">Корзина</a>
+      <div class="basket-link">
+        <a href="#">Корзина</a>
+      </div>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="magazine-head">Магазин готовых шаблонов</h1>
 
     <section class="productfilter">
-      <h2>Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="Productfilter cost">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" min="1" max="15000">
-          от <input type="number" min="0" max="15000" id="amount" name="amount" value="0">
-          до <input type="number" min="0" max="15000" id="amount2" name="amount2" value="15000">
+          <input type="range" min="1" max="15000"><br>
+          <span class="range">от</span> <input type="number" min="0" max="15000" id="amount" name="amount" value="0">
+          <span class="range">до</span> <input type="number" min="0" max="15000" id="amount2" name="amount2" value="15000">
         </fieldset>
-        <fieldset class="productfilter grid">
+        <fieldset>
           <legend>Сетка:</legend>
           <ul>
-            <li>
-            <input type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked>
+            <li class="filter-option filter-radio">
+            <input class="filter-input-radio filter-input" type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked>
             <label for="filter-adaptive">Адаптивная</label>
             </li>
-            <li>
-            <input type="radio" name="fix" value="fix" id="filter-fix">
+            <li class="filter-option filter-radio">
+            <input class="filter-input-radio filter-input" type="radio" name="adaptive" value="fix" id="filter-fix" >
             <label for="filter-fix">Фиксированная</label>
             </li>
-            <li>
-              <input type="radio" name="flex" value="flex" id="filter-flex">
+            <li class="filter-option filter-radio">
+              <input class="filter-input-radio filter-input" type="radio" name="adaptive" value="flex" id="filter-flex">
               <label for="filter-flex">Резиновая</label>
               </li>
           </ul>
         </fieldset>
-        <fieldset class="productfilter features">
+        <fieldset>
           <legend>Особенности</legend>
           <ul>
-            <li>
-              <input type="checkbox" name="slayder" id="filter-slayder" checked>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="slayder" id="filter-slayder" checked>
               <label for="filter-slayder">Слайдер</label>
             </li>
-            <li>
-              <input type="checkbox" name="block" id="filter-block">
+            <li class="filter-option filter-checkbox">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="block" id="filter-block">
               <label for="filter-block">Блок преимуществ</label>
             </li>
-            <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
-              <input type="checkbox" name="galery" id="filter-galery">
+            <li class="filter-option filter-checkbox">
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="galery" id="filter-galery">
               <label for="filter-galery">Галерея</label>
             </li>
-            <li>
-              <input type="checkbox" name="basket" id="filter-basket">
+            <li class="filter-option filter-checkbox" >
+              <input class="filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="filterfeatures">
       <h2>Сортировать</h2>
       <ul class="filterfeatures-list">
-        <li class="filterfeatures-item"><a href="#">По цене</a></li>
+        <li class="filterfeatures-item active"><a href="#">По цене</a></li>
         <li class="filterfeatures-item"><a href="#">По типу</a></li>
         <li class="filterfeatures-item"><a href="#">По названию</a></li>
       </ul>
@@ -94,10 +98,10 @@
       <h2>Список макетов</h2>
       <ul class="layouts-list">
         <li class="layouts-item">
-          <a href="#">Sedona</a>
           <img src="img/present-sedona.png" width="358" height="578" alt="пейзаж">
-          <h3>Информационный сайт для туристов</h3>
-          <button type="button">9900 Р</button>
+          <h3>Sedona</h3>
+          <p>Информационный сайт<br> для туристов</p>
+          <a class="button-sedona" href="#">9 900 Р</a>
         </li>
         <li class="layouts-item">
           <a href="#">PINK</a>
@@ -125,17 +129,17 @@
           <h3>Крафтовый квас всему голова</h3>
         </li>
       </ul>
-      <ul class="layouts-pages">
-        <li>
+      <ul class="pagination-list">
+        <li class="pagination-item-current">
           <a>1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">Следующая</a>
         </li>
       </ul>
@@ -150,7 +154,7 @@
   <footer class="main-footer">
 
     <section class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li>
           <a class="social-button" href="#">Вконтакте</a>
         </li>
@@ -169,6 +173,6 @@
     </section>
 
   </footer>
-
 </body>
+
 </html>
