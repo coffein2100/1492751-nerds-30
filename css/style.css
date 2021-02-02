@@ -189,7 +189,13 @@ img {
 
 .layouts-list{
   list-style: none;
+
 }
+
+.layouts-list li{
+  margin-bottom: 30px;
+}
+
 .layouts-list h3{
   font-style: normal;
   font-weight: bold;
@@ -257,11 +263,13 @@ img {
 
 
 .pagination-item-current {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .pagination-item-current a{
-  padding: 17px 20px 15px 20px;
+  padding: 14px 16px 11px 19px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -283,6 +291,7 @@ img {
   box-sizing: border-box;
   border-radius: 3px;
 }
+
 /* opportunities */
 
 .opportunities-list {
