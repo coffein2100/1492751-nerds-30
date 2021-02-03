@@ -26,7 +26,7 @@
 
 /* Global */
 
-body {
+.page-body{
   min-width: 1440px;
   margin: 0;
   padding: 0;
@@ -36,6 +36,11 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -47,9 +52,27 @@ img {
   height: auto;
 }
 
+/*grid*/
+
+.page {
+  height: 100%;
+}
+
+/*container*/
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
 /* Main navigation */
 
 .main-navigation {
+
+  display: grid;
+  grid-template-columns:30% 50% 20%;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -60,6 +83,13 @@ img {
 .site-navigation {
   list-style: none;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin: 0 50px 0 50px;
+}
+
+.main-header-logo{
+  justify-self: center;
 }
 /* User navigation */
 
@@ -89,6 +119,13 @@ img {
   text-decoration: underline var(--basic-nav);
   font-weight: 500;
 }
+
+/*sliders*/
+.sliders h2{
+margin-left: 100px;
+}
+
+
 
 /*magazine-head*/
 
@@ -233,6 +270,7 @@ img {
 
 .pagination-list {
   list-style: none;
+
 }
 .pagination-item{
   width: 50px;
@@ -294,9 +332,22 @@ img {
 
 /* opportunities */
 
+.opportunities{
+  margin-bottom: 80px;
+  margin-left: 100px;
+}
+
 .opportunities-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:0px;
+  margin: 0;
+  margin-right: 150px;
+  padding: 0;
   background-color: var(--basic-white);
+
+
 }
 
 .opportunities-item {
@@ -311,16 +362,18 @@ img {
 }
 .opportunities-item p{
   color: var(--basic-extra);
+  padding-bottom: 13px;
 }
 
 .button-left {
-
+  padding: 17px 40px 15px 39px;
   text-transform: uppercase;
   font-weight: 500;
   color: var(--basic-white);
   background-color: var(--basic-butleft);
   line-height: 18px;
   text-align: center;
+  border-radius: 3px;
 }
 .button-left:hover{
     background-color:var(--basic-butlefthover);
@@ -335,11 +388,13 @@ img {
 
 .button-center {
   text-transform: uppercase;
+  padding: 17px 40px 15px 39px;
   font-weight: 500;
   color: var(--basic-white);
   background-color: var(--basic-butcenter);
   line-height: 18px;
   text-align: center;
+  border-radius: 3px;
 }
 .button-center:hover{
     background-color:var(--basic-butcenterhover);
@@ -354,12 +409,13 @@ img {
 
 .button-right {
   text-transform: uppercase;
+  padding: 17px 40px 15px 39px;
   color: var(--basic-white);
   background-color: var(--basic-butright);
   line-height: 18px;
   text-align: center;
   font-weight: 500;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 .button-right:hover{
     background-color:var(--basic-bitrighthover);
@@ -369,6 +425,7 @@ img {
   color:rgba(255,255,255, 0.3);
   background-color:var(--basic-butrightfocus);
   font-weight: 500;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /*presentation*/
@@ -400,6 +457,10 @@ img {
 }
 
 /*features*/
+.features{
+
+}
+
 
 .features h3{
   text-transform: uppercase;
@@ -413,6 +474,7 @@ img {
   font-weight: 700;
   text-align: center;
   color: var(--basic-black);
+
 }
 .features-list sup{
   font-size: 26px;
@@ -426,13 +488,34 @@ img {
   line-height: 18px;
 }
 
+.pfcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:250px;
+  margin-left: 100px;
+
+}
+
+
 /*partners*/
 
+.partners{
+  margin: 30px 100px 30px 100px;
+}
+
 .partners-list {
+
   list-style: none;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 /*footer*/
+
+.main-footer{
+
+
+}
 
 .social-list{
   list-style: none;
@@ -451,4 +534,8 @@ img {
 .discounts p{
   text-align: left;
   color: var(--basic-footer);
+}
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 35% 1fr;
 }
