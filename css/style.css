@@ -130,11 +130,55 @@ margin-left: 100px;
 /*magazine-head*/
 
 .magazine-head{
-   font-style: normal;
+  font-style: normal;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  display: inline-block;
+  vertical-align:middle;
+  text-align: center;
+  min-width: 1440px;
+  align-content: start;
+
+}
+.magazine-block{
+  margin: 0;
+  padding: 0 ;
+  background: var(--basic-head);
+  width: auto;
+  height: 100px;
+  min-width: 1440px;
+  align-content: start;
+}
+
+/*grid catalog*/
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  outline-offset: -5px;
+}
+.page-catalog .magazine-block{
+  grid-column: 1 / -1;
+}
+
+.page-catalog .productfilter{
+  grid-column: 1 / 1;
+
+}
+.page-catalog .filterfeatures{
+  grid-column: 2 / 4;
+
+}
+
+
+.page-catalog .layouts{
+  grid-column: 2 / -1;
+
+}
+.page-catalog .contacts{
+  grid-column:1 / -1;
 }
 
 /*productfilter*/
@@ -192,6 +236,10 @@ margin-left: 100px;
 
 /*filterfeatures*/
 
+.filterfeatures{
+
+}
+
 .filterfeatures h2{
   font-style: normal;
   font-weight: bold;
@@ -226,10 +274,12 @@ margin-left: 100px;
 
 .layouts-list{
   list-style: none;
-
+  display: grid;
+  grid-template-columns:1fr 1fr;
 }
 
 .layouts-list li{
+
   margin-bottom: 30px;
 }
 
