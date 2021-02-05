@@ -86,7 +86,19 @@ img {
   margin: 0;
   padding: 0;
   margin: 0 50px 0 50px;
+  width: auto;
 }
+.site-navigation li{
+  float: left;
+  display: inline;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.basket-link{
+  display: grid;
+  width: 135px;
+  margin-top: 30px;
+ }
 
 .main-header-logo{
   justify-self: center;
@@ -134,33 +146,27 @@ margin-left: 100px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  text-align: center;
-  display: inline-block;
-  vertical-align:middle;
-  text-align: center;
-  min-width: 1440px;
-  align-content: start;
-
+  display: grid;
+  text-align: justify;
+  text-transform:none;
+  width: max-content;
 }
 .magazine-block{
   margin: 0;
-  padding: 0 ;
-  background: var(--basic-head);
-  width: auto;
-  height: 100px;
-  min-width: 1440px;
-  align-content: start;
+  padding: 0;
+  margin-left: 357px;
+
 }
 
 /*grid catalog*/
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 40% 30% 30%;
-  outline-offset: -5px;
+  grid-template-columns: 30% 35% 35%;
+
 }
 .page-catalog .magazine-block{
-  grid-column: 1 / -1;
+
 }
 
 .page-catalog .productfilter{
@@ -168,10 +174,9 @@ margin-left: 100px;
 
 }
 .page-catalog .filterfeatures{
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
 
 }
-
 
 .page-catalog .layouts{
   grid-column: 2 / -1;
@@ -182,6 +187,11 @@ margin-left: 100px;
 }
 
 /*productfilter*/
+
+.productfilter{
+
+  margin-right: 50px;
+}
 
 .filter legend {
   font-style: normal;
@@ -237,10 +247,11 @@ margin-left: 100px;
 /*filterfeatures*/
 
 .filterfeatures{
-
+margin-left: 50px;
 }
 
 .filterfeatures h2{
+
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -249,8 +260,15 @@ margin-left: 100px;
 }
 
 .filterfeatures-list{
+
   list-style: none;
 }
+
+.filterfeatures-list li{
+
+
+}
+
 
 .filterfeatures-item a{
   font-style: normal;
@@ -275,7 +293,10 @@ margin-left: 100px;
 .layouts-list{
   list-style: none;
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:359px 359px;
+  gap:30px;
+  margin-left: 100px;
+  width: min-content;
 }
 
 .layouts-list li{
@@ -321,6 +342,11 @@ margin-left: 100px;
 .pagination-list {
   list-style: none;
 
+
+}
+.pagination-list li{
+  float: left;
+  margin-right: 10px;
 }
 .pagination-item{
   width: 50px;
