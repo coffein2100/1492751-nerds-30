@@ -89,10 +89,9 @@ img {
   width: auto;
 }
 .site-navigation li{
-  float: left;
-  display: inline;
-  margin-top: 30px;
-  margin-right: 50px;
+
+  display: grid;
+
 }
 .basket-link{
   display: grid;
@@ -345,8 +344,7 @@ margin-left: 50px;
 
 }
 .pagination-list li{
-  float: left;
-  margin-right: 10px;
+
 }
 .pagination-item{
   width: 50px;
