@@ -608,16 +608,19 @@ margin-left: 50px;
 .presentation p{
   text-align: left;
   color: var(--basic-extra);
+  margin-bottom: 35px;
 }
 
 .presentation-list{
   color: var(--basic-extra);
   list-style: none;
   list-style-position: outside;
+
 }
 .presentation-item{
   background: url("../img/marker.svg") no-repeat left center;
   padding-left: 40px;
+  margin-bottom: 15px;
 }
 
 /*features*/
@@ -630,7 +633,7 @@ margin-left: 50px;
 
 }
 .feature-item td{
-  padding-right: 15px;
+  padding-right: 12px;
 }
 
 .features h3{
