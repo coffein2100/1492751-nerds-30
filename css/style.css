@@ -203,6 +203,7 @@ img {
   background: var(--basic-nav);
   border-radius: 3px;
   padding: 17px 54px 15px 54px;
+  text-transform: uppercase;
 }
 .text-slider a:hover{
   background-color:var(--basic-butlefthover);
@@ -624,6 +625,13 @@ margin-left: 50px;
   margin-right: 90px;
 }
 
+.feature-item{
+
+
+}
+.feature-item td{
+  padding-right: 15px;
+}
 
 .features h3{
   text-transform: uppercase;
@@ -635,7 +643,7 @@ margin-left: 50px;
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
   color: var(--basic-black);
 
 }
