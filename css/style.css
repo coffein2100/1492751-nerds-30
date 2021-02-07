@@ -27,6 +27,7 @@
 /* Global */
 
 .page-body{
+
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -84,7 +85,6 @@ img {
 
 .main-navigation {
   display: flex;
-  width: auto;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -229,26 +229,29 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  display: grid;
-  text-align: justify;
   text-transform:none;
-  width: max-content;
+
 }
 .magazine-block{
-  margin: 0;
-  padding: 0;
-  margin-left: 357px;
+  display: flex;
+  margin-left: 40px;
+  justify-content: space-between;
+  padding-bottom: 108px;
+  padding-left: 357px;
+  padding-right: 356px;
+  background: var(--basic-head);
+  width: 727px;
+  margin-bottom: 55px;
 
 }
 
 /*grid catalog*/
 
+
+
 .page-catalog {
   display: grid;
   grid-template-columns: 30% 35% 35%;
-
-}
-.page-catalog .magazine-block{
 
 }
 
@@ -257,7 +260,7 @@ img {
 
 }
 .page-catalog .filterfeatures{
-  grid-column: 2 / 3;
+  grid-column: 2 / -1;
 
 }
 
@@ -272,8 +275,9 @@ img {
 /*productfilter*/
 
 .productfilter{
-
-  margin-right: 50px;
+  margin-right: 10px;
+  padding-left: 140px;
+  margin-top: -80px;
 }
 
 .filter legend {
@@ -283,6 +287,17 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color:var(--basic-black);
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.filter-option{
+  margin-top: 20px;
 }
 
 .filter ul {
@@ -309,6 +324,7 @@ img {
   background:var(--basic-head);
   border: none;
   text-transform: uppercase;
+  padding: 17px 89px 15px 88px;
 }
 .filter-button:hover{
   background: var(--basic-butfilterhover);
@@ -330,7 +346,10 @@ img {
 /*filterfeatures*/
 
 .filterfeatures{
-margin-left: 50px;
+
+  display: flex;
+  padding-left: 70px;
+  margin-left: 50px;
 }
 
 .filterfeatures h2{
@@ -343,13 +362,19 @@ margin-left: 50px;
 }
 
 .filterfeatures-list{
-
   list-style: none;
+  display: flex;
+  height: 61px;
+  width: 350px;
 }
 
-.filterfeatures-list li{
+.filterfeatures-left{
+  width: 134px;
+  padding-right: 266px;
+}
 
-
+.filterfeatures-item {
+  margin-right: 35px;
 }
 
 
@@ -373,25 +398,41 @@ margin-left: 50px;
 
 /*layouts*/
 
+.layouts{
+
+}
+
 .layouts-list{
   list-style: none;
   display: grid;
-  grid-template-columns:359px 359px;
-  gap:30px;
-  margin-left: 100px;
+  grid-template-columns:360px 360px;
+  gap:80px;
+  margin-left: 80px;
   width: min-content;
+  margin-bottom: 55px;
 }
 
 .layouts-list li{
 
-  margin-bottom: 30px;
+}
+.layouts-item{
+  height: 800px;
+  background: var(--basic-head);
+
+}
+
+.layouts-item a{
+  height: 347px;
 }
 
 .layouts-list h3{
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -400,8 +441,15 @@ margin-left: 50px;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-specional);
+  text-align: center;
+  padding-bottom: 32px;
+}
+.button-cont{
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .button-sedona{
+  padding: 17px 72px 15px 72px;
   color: var(--basic-white);
   background: var(--basic-butleft);
   font-style: normal;
@@ -423,21 +471,22 @@ margin-left: 50px;
 /*.pagination */
 
 .pagination-list {
+  height: 60px;
+  display: flex;
   list-style: none;
-
-
 }
-.pagination-list li{
 
-}
 .pagination-item{
+  margin: 0;
   width: 50px;
   height: 50px;
-  margin-bottom: 20px;
+  margin-right: 11px;
+
 }
 
 
 .pagination-item a{
+
   padding: 17px 20px 15px 20px;
   font-weight: 500;
   font-size: 16px;
@@ -447,6 +496,30 @@ margin-left: 50px;
   background: var(--basic-head);
   border-radius: 3px;
 }
+
+.pagination-item-next a{
+  padding: 17px 77px 15px 78px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background: var(--basic-head);
+  border-radius: 3px;
+}
+
+.pagination-item-next a:hover{
+  background: var(--basic-butfilterhover);
+}
+.pagination-item-next a:focus,
+.pagination-item-next a:active{
+  background:var( --basic-butfilterclick);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
+}
+
+
+
 .pagination-item a:hover{
   background: var(--basic-butfilterhover);
 }
@@ -457,9 +530,9 @@ margin-left: 50px;
   opacity: 0.3;
 }
 
-
 .pagination-item-current {
-  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 11px;
   width: 50px;
   height: 50px;
 }
