@@ -30,11 +30,15 @@
     </div>
   </header>
 
-  <section class="magazine-block">
-    <h1 class="magazine-head">Магазин готовых шаблонов</h1>
-  </section>
+
 
   <main class="page-catalog container">
+
+    <section class="magazine-block">
+      <div class="magazine-container">
+        <h1 class="magazine-head">Магазин готовых шаблонов</h1>
+      </div>
+    </section>
 
     <section class="filterfeatures">
       <div class="filterfeatures-left">
@@ -53,7 +57,7 @@
     <section class="productfilter">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend>Стоимость:</legend>
           <input type="range" min="1" max="15000"><br>
           <span class="range">от</span> <input type="number" min="0" max="15000" id="amount" name="amount" value="0">
           <span class="range">до</span> <input type="number" min="0" max="15000" id="amount2" name="amount2" value="15000">
@@ -76,7 +80,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности</legend>
+          <legend>Особенности:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
               <input class="filter-input-checkbox filter-input" type="checkbox" name="slayder" id="filter-slayder" checked>
