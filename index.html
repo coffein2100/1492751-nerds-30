@@ -27,25 +27,50 @@
         </div>
 
       </nav>
-    </div>
+
+    <div class="slide-wrapper slide-wrapper-1">
+      <section class="slider">
+        <ul class="slider-list">
+          <li class="slider-item slide slide-current">
+            <h1 class="slide-title">
+              Долго, дорого, скрупулезно.
+            </h1>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="button slide-button" href="#">
+            Узнать больше
+            </a>
+          </li>
+          <li class="slider-item slide ">
+            <h1 class="slide-title">
+              Любим математику <br>как никто другой
+            </h1>
+            <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
+            <a class="button slide-button" href="#">
+            Узнать больше
+            </a>
+        </li>
+        <li class="slider-item slide ">
+          <h1 class="slide-title">
+            Только ночь,<br>только хардкор
+          </h1>
+            <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+          <a class="button slide-button" href="#">
+            Узнать больше
+          </a>
+        </li>
+      </ul>
+      <div class="slider-controls">
+        <button class="current" type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
+      </div>
+    </section>
+  </div>
     </header>
 
     <main class="page-home container">
 
-      <section class="sliders">
-        <div class="sliders-container">
 
-          <div class="text-slider">
-            <h1>Долго, дорого, скрупулезно</h1>
-            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="btn-slider" href="#">Узнать больше</a>
-          </div>
-
-          <div class="img-slider">
-            <img src="img/slide-mobile.png" width="760" height="431" alt="телефоны">
-          </div>
-        </div>
-      </section>
 
       <section class="opportunities">
 
@@ -111,6 +136,15 @@
 
       <section class="contacts">
         <img src="img/map.png" width="1440" height="416" alt="карта расположения студии">
+        <div class="contacts-adress">
+          <div class="cont-container">
+            <h3 class="cont-title">NЁRDS DESIGN STUDIO</h3>
+            <p class="cont-posit">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br></p>
+            <a class="cont-phone" href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a>
+            <button class="cont-btn" type="button">Напишите нам</button>
+          </div>
+        </div>
+        <img class="cont-point" src="img/map-marker.png" width="231" height="190" alt="отметка на карте">
       </section>
 
     </main>
@@ -149,5 +183,27 @@
       </section>
       </div>
     </footer>
+
+    <section class="modal-latters">
+      <div class="modal-container">
+        <h1 class="modal-title">Напишите нам</h1>
+          <form class="modal-form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal-left">
+              <label class="modal-name" for="firstname">Ваше имя:</label>
+              <input class="modal-input" id="firstname" type="text" name="person" placeholder="Имя Фамилия">
+            </div>
+            <div class="modal-right">
+              <label class="modal-name" for="email">Ваш email:</label>
+              <input class="modal-input" id="email" type="email" placeholder="email@example.com ">
+            </div>
+            <label class="modal-name" for="text">Текст письма:</label>
+            <textarea class="modal-inputbig" rows="10" id="text" placeholder="В свободной форме" form="modal-form"></textarea>
+            <button class="modal-btn" type="submit">Отправить</button>
+        </form>
+
+      </div>
+      <button class="modal-close" type="button"></button>
+    </section>
+
   </body>
 </html>
