@@ -29,6 +29,7 @@
 /* Global */
 
 .page-body{
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -76,6 +77,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 64px;
+  background: var(--basic-head);
 }
 
 .main-navigation {
@@ -138,7 +140,7 @@ img {
 }
 
 .main-header-logo{
-  margin-left: 40px;
+
   display: block;
   width: 160px;
   height: 65px;
@@ -183,23 +185,23 @@ img {
 
 
 .slide-wrapper{
-
-  padding-left: 180px;
+  display: block;
   height: 421px;
   position: relative;
   width: 100%;
   background-color: var(--basic-head);
   background-repeat: no-repeat;
-  background-position: 577px 100%;
+  background-position: 537px 100%;
 }
 .slider-list {
+
   display: flex;
   flex-wrap: wrap;
   width: 538px;
   margin: 0;
   padding: 0;
-
-
+  height: 421px;
+  margin-left: 140px;
   list-style: none;
 }
 
@@ -258,7 +260,7 @@ img {
 .slider-controls {
   position: absolute;
   top:306px;
-  left: 716px;
+  left: 676px;
   z-index: 20;
   display: flex;
   width: 88px;
