@@ -341,6 +341,7 @@ img {
 
 
 .page-home{
+  position: relative;
   display: grid;
   grid-template-columns: 30% 35% 35%;
 }
@@ -1138,14 +1139,15 @@ position: relative;
 }
 /*modal*/
 .modal-latters{
-  display: none;
+
   position:absolute;
-  top:1706px;
-  left: 278px;
+  top:1100px;
+  left: 245px;
   width: 960px;
   height: 590px;
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+
 }
 
 .modal-container{
