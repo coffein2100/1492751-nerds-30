@@ -23,7 +23,12 @@
   --basic-butfilterclick:#D5D5D5;
   --basic-slidbtn:#C1C1C1;
   --basic-inputfocus:#B4B9BB;
-
+  --basic-scale:#d7dcde;
+  --basic-scalerange:#00ca74;
+  --basic-scaleform:#ababab;
+  --basic-scaleshadow:#cfcfcf;
+  --basic-controlback:#f1f1f1;
+  --basic-chekbox:#4D4D4D;
   }
 
 /* Global */
@@ -43,6 +48,74 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*filters*/
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -2px;
+  width: 19px;
+  height: 19px;
+  border:2px solid var(--basic-chekbox);
+  border-radius: 3px;
+  opacity: 0.2;
+}
+
+.filter-input-checkbox:checked + label::after {/*выбранный чекбокс*/
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -42px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid var(--basic-chekbox);
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -33px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--basic-chekbox);
+  border-radius: 50%;
 }
 
 a {
@@ -78,6 +151,14 @@ img {
   margin-bottom: 64px;
   background: var(--basic-head);
 }
+.catalog-header{
+  width: 100%;
+  height: 355px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+  background: var(--basic-head);
+}
 
 .main-navigation {
   padding-top: 48px;
@@ -98,11 +179,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 437px;
-  height: 30px;
+  height: 45px;
   list-style: none;
   font-weight: normal;
   width: 500px;
 }
+.site-active{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
+  border-bottom: 2px solid var(--basic-butleft);
+}
+
+
 .site-navigation li{
   margin-right: 45px;
 }
@@ -112,7 +202,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 115px;
-  height: 30px;
+  height: 45px;
   margin-top: 27px;
   margin-left: 183px;
   margin-right: 140px;
@@ -177,6 +267,10 @@ img {
   text-decoration: underline var(--basic-nav);
   font-weight: 500;
 }
+
+
+
+
 
 /*sliders*/
 
@@ -310,24 +404,16 @@ img {
   font-size: 55px;
   line-height: 55px;
   text-transform:none;
-
-
-}
-.magazine-block .magazine-container{
-  display: flex;
-
+  padding-top: 29px;
 
 }
+
 .magazine-block{
-  margin: 0;
-  padding: 0;
-  justify-content:center;
-  padding-bottom: 108px;
+  height: 175px;
   padding-left: 357px;
-  padding-right: 356px;
   background: var(--basic-head);
-  width: 727px;
-  margin-bottom: 55px;
+  width: 75%;
+
 
 }
 
@@ -395,7 +481,7 @@ img {
 .productfilter{
   margin-right: 10px;
   padding-left: 140px;
-  margin-top: -80px;
+  margin-top: -57px;
 }
 
 .filter legend {
@@ -453,25 +539,89 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.range {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-head);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-scale);
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background:var(--basic-scalerange);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-scaleform);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-scaleshadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls label {
   text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--basic-extra);
+  border: none;
+  border-radius: 5px;
+  background: var(--basic-controlback);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*filterfeatures*/
 
 .filterfeatures{
-
   display: flex;
-  padding-left: 70px;
+  flex-wrap: wrap;
+  padding-left: 57px;
   margin-left: 50px;
+  height: 70px;
 }
 
 .filterfeatures h2{
-
+  margin-top: 13px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -482,13 +632,27 @@ img {
 .filterfeatures-list{
   list-style: none;
   display: flex;
-  height: 61px;
-  width: 350px;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 390px;
+  padding-left: 5px;
+  margin-top: 13px;
+}
+.filterfeatures-list li{
+  margin-right: 26px;
+  padding-top: 0;
 }
 
+.filterfeatures-right{
+  margin-top: 0;
+  margin-left: 250px;
+  width: 430px;
+  height: 70px;
+}
 .filterfeatures-left{
-  width: 134px;
-  padding-right: 266px;
+  width: 144px;
+  margin-left: 2px;
+  height: 70px;
 }
 
 .filterfeatures-item {
@@ -566,7 +730,7 @@ img {
   margin-left: 80px;
   margin-right: 80px;
 }
-.button-sedona{
+.button-catalog{
   padding: 17px 72px 15px 72px;
   color: var(--basic-white);
   background: var(--basic-butleft);
@@ -576,12 +740,13 @@ img {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
-.button-sedona:hover{
+.button-catalog:hover{
   background:var(--basic-butlefthover);
 }
-.button-sedona:focus{
+.button-catalog:active{
   background:var(--basic-butleftfocus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
