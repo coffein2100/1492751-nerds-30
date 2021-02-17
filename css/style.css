@@ -807,9 +807,9 @@ img {
   opacity: 0.12;
 }
 .heads-buy{
-  display: block;
+  display: inline-block;
+  width: 100%;
   padding-top: 20px;
-  margin-left: 145px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
