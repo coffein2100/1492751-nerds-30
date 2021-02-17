@@ -75,18 +75,26 @@
   position: absolute;
   left: -35px;
   top: -2px;
-  width: 19px;
-  height: 19px;
-  border:2px solid var(--basic-chekbox);
-  border-radius: 3px;
-  opacity: 0.2;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
 }
-.filter-input-checkbox + label:hover::before{
-  opacity: 1;
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0;
 }
-.filter-input-checkbox + label:disabled::before{
-  opacity: 0.1;
-}
+.filter-input-checkbox:not(:disabled):not(:checked)+label:hover::before{opacity: 1;}
 
 .filter-input-checkbox:checked + label::after {/*выбранный чекбокс*/
   content: "";
@@ -95,19 +103,14 @@
   left: -35px;
   width: 25px;
   height: 25px;
-  border: none;
-  background-color: white;
+  background-color: var(--basic-white);
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: none;
   opacity: 0.4;
 }
-.filter-input-checkbox:checked + label:hover::after{
-  opacity: 1;
-}
-.filter-input-checkbox:checked + label:disabled::after{
-  opacity: 0.1;
-}
+.filter-input-checkbox:not(:disabled):checked+label:hover::after{opacity: 1;}
 
 .filter-input-radio + label::before {
   content: "";
@@ -133,18 +136,10 @@
   border-radius: 50%;
   opacity: 0.4;
 }
-.filter-input-radio + label:hover::before{
-  opacity: 1;
-}
-.filter-input-radio:checked + label:hover::after{
-  opacity: 1;
-}
-.filter-input-radio + label:disabled:before{
-  opacity: 0.1;
-}
-.filter-input-radio:checked + label:disabled::after{
-  opacity: 0.1;
-}
+.filter-input-radio:not(:disabled):not(:checked)+label:hover::before{opacity: 1;}
+.filter-input-radio:not(:disabled):checked+label:hover::before{opacity: 1;}
+.filter-input-radio:not(:disabled):checked+label:hover::after{opacity: 1;}
+
 a {
   text-decoration: none;
 }
