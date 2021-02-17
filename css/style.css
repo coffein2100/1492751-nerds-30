@@ -73,8 +73,8 @@
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -40px;
-  top: -4px;
+  left: -35px;
+  top: -2px;
   width: 19px;
   height: 19px;
   border:2px solid var(--basic-chekbox);
@@ -91,8 +91,8 @@
 .filter-input-checkbox:checked + label::after {/*выбранный чекбокс*/
   content: "";
   position: absolute;
-  top: -4px;
-  left: -40px;
+  top: -2px;
+  left: -35px;
   width: 25px;
   height: 25px;
   border: none;
@@ -112,10 +112,10 @@
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -35px;
   top: -3px;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   border: 4px solid var(--basic-chekbox);
   border-radius: 50%;
   opacity: 0.4;
@@ -125,10 +125,10 @@
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: -31px;
-  width: 8px;
-  height: 8px;
+  top: 5px;
+  left: -27px;
+  width: 9px;
+  height: 9px;
   background-color: var(--basic-chekbox);
   border-radius: 50%;
   opacity: 0.4;
@@ -444,12 +444,6 @@ img {
 
 }
 
-.page-catalog container{
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 5px;
-}
-
 /*grid*/
 .page-catalog{
   position: relative;
@@ -528,17 +522,24 @@ img {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 54px;
   border: none;
 }
 .filter .fl-centr{
+
   margin-bottom: 28px;
 }
 .filter .fl-bottom{
-  margin-bottom: 27px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+ .fl-bottom .filter-option{
+  margin-bottom: 20px;
+}
+
 .filter-option{
-  margin-top: 20px;
+  margin-top: 18px;
+  margin-left: -5px;
 }
 
 .filter ul {
@@ -628,11 +629,12 @@ img {
   text-transform: uppercase;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+
 }
 .price-controls input {
   width: 60px;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 8px;
+  margin-left: 8px;
   text-align: center;
   color: var(--basic-extra);
   border: none;
@@ -778,6 +780,10 @@ img {
   border-top: none;
 }
 .mask{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   opacity: 0;
   text-align: center;
   position: absolute;
@@ -787,7 +793,7 @@ img {
   background: var(--basic-head);
 }
 .layouts-item:hover{
-  border: none;
+
   box-shadow: -1px 25px 20px -4px rgba(34, 60, 80, 0.2);
 }
 .layouts-item:hover .mask{
@@ -802,7 +808,8 @@ img {
 }
 .heads-buy{
   display: block;
-  margin-top: 26px;
+  padding-top: 20px;
+  margin-left: 145px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -811,6 +818,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
 }
+
 .heads-buy:hover{
   color: var(--basic-nav);
 }
@@ -820,24 +828,20 @@ img {
 
 .layouts-item p{
   display: block;
+  height: 37px;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-specional);
   text-align: center;
-  margin-bottom: 32px;
+  width: 100%;
+  margin-top: -5px;
+
 }
-.button-cont{
-  display: flex;
-  flex-wrap: wrap;
+
+.button-catalog{
   height: 50px;
   width: 200px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.button-catalog{
-  width: 200px;
-  padding-top: 17px;
   color: var(--basic-white);
   background: var(--basic-butleft);
   font-style: normal;
@@ -846,7 +850,11 @@ img {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  border: none;
   border-radius: 3px;
+  margin-left: 80px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .button-catalog:hover{
