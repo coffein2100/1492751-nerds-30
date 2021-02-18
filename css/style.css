@@ -505,7 +505,7 @@ img {
 
 .productfilter{
   margin-right: 10px;
-  padding-left: 0x;
+  /*padding-left: 0x;*/
   margin-top: -57px;
 }
 
@@ -834,8 +834,8 @@ img {
 }
 
 .layouts-item p{
-  display: inline-block
-  justify-content: space-between;
+  display: inline-block;
+
   height: 37px;
   font-weight: normal;
   font-size: 16px;
@@ -862,7 +862,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   border: none;
-
+  cursor: pointer;
   border-radius: 3px;
   margin-left: 80px;
   margin-top: 0;
