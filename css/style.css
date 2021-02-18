@@ -43,7 +43,8 @@
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  min-width: 1440px;
+  min-width: 1200px;
+  /*min-width: 1440px;*/
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -159,9 +160,12 @@ img {
 /*container*/
 
 .container {
-  width: 1440px;
+
+ /* width: 1440px;*/
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 20px;
+
 }
 
 /*head*/
@@ -174,18 +178,20 @@ img {
   background: var(--basic-head);
 }
 .catalog-header{
+
   width: 100%;
   height: 355px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 44px;
   background: var(--basic-head);
 }
 
 .main-navigation {
   padding-top: 48px;
-  padding-left: 140px;
   display: flex;
+  justify-content: space-between;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -193,6 +199,7 @@ img {
   background-color: var(--basic-head);
   text-transform: uppercase;
   height: 77px;
+
 }
 .site-navigation {
   padding: 0;
@@ -227,7 +234,7 @@ img {
   height: 45px;
   margin-top: 27px;
   margin-left: 183px;
-  margin-right: 140px;
+
  }
 
  .basket-link .basket {
@@ -250,7 +257,7 @@ img {
 
 .main-header-logo{
 
-  display: block;
+  display: flex;
   width: 160px;
   height: 65px;
 
@@ -427,14 +434,14 @@ img {
   line-height: 55px;
   text-transform:none;
   padding-top: 29px;
-
+  width: 100%;
 }
 
 .magazine-block{
   height: 175px;
-  padding-left: 357px;
+  padding-left:217px;
   background: var(--basic-head);
-  width: 75%;
+  width: 80%;
 
 
 }
@@ -498,7 +505,7 @@ img {
 
 .productfilter{
   margin-right: 10px;
-  padding-left: 140px;
+  padding-left: 0x;
   margin-top: -57px;
 }
 
@@ -647,14 +654,18 @@ img {
 /*filterfeatures*/
 
 .filterfeatures{
+
   display: flex;
   flex-wrap: wrap;
-  padding-left: 57px;
+  justify-content: space-between;
+  padding-left: 0px;
   margin-left: 50px;
   height: 70px;
+  width: 97%;
 }
 
 .filterfeatures h2{
+
   margin-top: 13px;
   font-style: normal;
   font-weight: bold;
@@ -669,7 +680,7 @@ img {
   flex-wrap: wrap;
   padding: 0;
   width: 390px;
-  padding-left: 5px;
+  margin-left: 15px;
   margin-top: 13px;
 }
 .filterfeatures-list li{
@@ -678,9 +689,9 @@ img {
 }
 
 .filterfeatures-right{
+
   margin-top: 0;
-  margin-left: 250px;
-  width: 430px;
+  width: 400px;
   height: 70px;
 }
 .filterfeatures-left{
@@ -751,11 +762,12 @@ img {
 }
 
 .layouts-list{
+
   list-style: none;
   display: grid;
   grid-template-columns:360px 360px;
-  gap:30px 40px;
-  margin-left: 68px;
+  gap:28px 40px;
+  margin-left: 12px;
   width: min-content;
   margin-bottom: 55px;
 }
@@ -868,17 +880,18 @@ img {
 /*.pagination */
 
 .pagination-list {
-  margin-top: -5px;
+
+  margin-top: 0px;
   height: 60px;
   display: flex;
   list-style: none;
   margin-bottom: 52px;
+  margin-left: 0;
 }
 
 .pagination-item{
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   width: 50px;
   height: 50px;
   margin-right: 11px;
@@ -941,7 +954,7 @@ img {
 }
 
 .pagination-item-current {
-  margin-left: 68px;
+  margin-left: 13px;
   margin-right: 11px;
   width: 50px;
   height: 50px;
@@ -1289,13 +1302,14 @@ img {
   width: 660px;
   flex-wrap: wrap;
   padding: 0;
-  margin-left: 36px;
+
 }
 
 .discounts h2{
   margin: 0;
-  margin-top: 5px;
+  margin-top: 3px;
   padding: 0;
+  padding-left: 6px;
   font-size: 36px;
   line-height: 36px;
   text-align: left;
@@ -1330,25 +1344,26 @@ img {
   justify-content: space-between;
   width: 260px;
   margin-top: -3px;
-  margin-left: 140px;
   padding: 0;
   list-style: none;
 }
 
 .discounts p{
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
   text-align: left;
   color: var(--basic-footer);
 }
 .main-footer .container {
   display: grid;
-  grid-template-columns: 35% 1fr;
+  grid-template-columns: 34% 1fr;
 }
 
 
 
 .contacts{
-position: relative;
+  margin: auto;
+  position: relative;
 
 }
 .contacts-adress{
@@ -1384,7 +1399,7 @@ position: relative;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-land);
-  margin-top:-5px
+  margin-top:-10px
 }
 .cont-phone{
   margin: 0;
