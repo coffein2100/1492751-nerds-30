@@ -310,7 +310,7 @@ img {
   width: 100%;
   background-color: var(--basic-head);
   background-repeat: no-repeat;
-  background-position: 537px 100%;
+  background-position: 397px 100%;
 }
 .slider-list {
   display: flex;
@@ -319,7 +319,7 @@ img {
   margin: 0;
   padding: 0;
   height: 421px;
-  margin-left: 140px;
+
   list-style: none;
 }
 
@@ -378,7 +378,7 @@ img {
 .slider-controls {
   position: absolute;
   top:306px;
-  left: 676px;
+  left: 536px;
   z-index: 20;
   display: flex;
   width: 88px;
@@ -657,7 +657,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 0px;
-  margin-left: 50px;
+
   height: 70px;
   width: 97%;
 }
@@ -995,14 +995,13 @@ img {
 
 .opportunities{
   margin-bottom: 77px;
-  margin-left: 140px;
-  margin-right: 100px;
 }
 
 .opportunities-list {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap:39px;
   padding: 0;
   background-color: var(--basic-white);
 
@@ -1215,10 +1214,8 @@ img {
   padding-right: 0;
   padding-top: 39px;
   display: grid;
-  grid-template-columns: 55% 35%;
-  gap: 135px;
-  margin-left: 140px;
-  margin-right: 90px;
+  grid-template-columns: 60% 40%;
+  gap: 105px;
   margin-bottom: 50px;
   border-top: 2px solid var(--basic-head);
 }
@@ -1228,8 +1225,6 @@ img {
 
 .partners{
   height: 177px;
-  margin-left: 140px;
-  margin-right: 90px;
   margin-bottom: 80px;
   border-bottom: 2px solid var(--basic-head);
   border-top: 2px solid var(--basic-head);
@@ -1260,20 +1255,20 @@ img {
 }
 .partners-html{
   margin-top: 53px;
-
+  margin-left: 10px;
 }
 .partners-borod{
-  margin-top: 44px;
-  padding-right: 20px;
+  margin-top: 40px;
+  margin-left: 15px;
 }
 
 .partners-pink{
-  margin-top: 45px;
-  padding-right: 31px;
+  margin-top: 40px;
+  margin-left: 25px;
 }
 .partners-mishka{
-  margin-top: 45px;
-  padding-right: 31px;
+  margin-top: 50px;
+  margin-left: 35px;
 }
 .partners-item:hover{
   opacity: 1;
