@@ -173,7 +173,7 @@ img {
 
 /*head*/
 .main-header{
-
+  width: 100%;
   min-height: 545px;
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +195,7 @@ img {
 }
 
 .main-navigation {
-
+  width: 100%;
   padding-top: 48px;
   display: flex;
   justify-content: space-between;
@@ -306,7 +306,7 @@ img {
   display: block;
   min-height: 421px;
   position: relative;
-  width: 100%;
+  width: 98%;
   background-color: var(--basic-head);
   background-repeat: no-repeat;
   background-position: 397px 100%;
@@ -1394,6 +1394,9 @@ margin-left: 20px;
   grid-template-columns: 34% 1fr;
 }
 
+.contacts{
+  z-index: 1;
+}
 
 .map-container{
   position: relative;
@@ -1401,6 +1404,8 @@ margin-left: 20px;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+
+
 }
 .map-img{
   display: block;
@@ -1415,6 +1420,7 @@ margin-left: 20px;
   padding-right: 0px;
   padding-top: 0px;
   width: 100%;
+  z-index: -1;
 }
 
 .cont-point{
@@ -1506,13 +1512,13 @@ margin-left: 20px;
 
 .modal-latters{
   position:absolute;
-  top:1100px;
-  left: 245px;
+  top:1706px;
+  left: 120px;
   width: 960px;
   height: 590px;
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-
+  z-index: 10;
 }
 
 .modal-container{
