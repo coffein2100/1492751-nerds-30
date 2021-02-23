@@ -174,7 +174,7 @@ img {
 /*head*/
 .main-header{
 
-  height: 545px;
+  min-height: 545px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 64px;
@@ -186,7 +186,7 @@ img {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 355px;
+  min-height: 355px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -234,14 +234,10 @@ img {
 }
 
 .basket-link{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 115px;
   height: 45px;
   margin-top: 27px;
   margin-left: 183px;
-
  }
 
  .basket-link .basket {
@@ -252,7 +248,7 @@ img {
 
 .basket::before {
   position: absolute;
-  top:7px;
+  top:2px;
   left:0px;
   content: "";
   width: 15px;
@@ -308,7 +304,7 @@ img {
 
 .slide-wrapper{
   display: block;
-  height: 421px;
+  min-height: 421px;
   position: relative;
   width: 100%;
   background-color: var(--basic-head);
@@ -317,12 +313,12 @@ img {
 }
 .slider-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 538px;
   margin: 0;
   padding: 0;
-  height: 421px;
-
+  min-height: 421px;
   list-style: none;
 }
 
@@ -340,6 +336,8 @@ img {
 .slider-item{
  display: flex;
  flex-wrap: wrap;
+ min-height: 421px;
+
 }
 
 .slider-item p{
@@ -398,10 +396,13 @@ img {
   cursor: pointer;
 }
 .slide {
+  min-height: 421px;
   display: none;
 }
 .slide-current {
   display: block;
+  max-width: 536px;
+  min-height: 421px;
 }
 
 .slider-controls .current {
@@ -440,7 +441,9 @@ img {
 }
 
 .magazine-block{
-  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 175px;
   padding-left:217px;
   background: var(--basic-head);
   width: 80%;
@@ -513,7 +516,30 @@ position: relative;
   width: 100%;
 }
 
+.filt-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 260px;
+  min-height: 700px;
+}
+
+.filter{
+
+}
+.filter-item{
+  min-height: 150px;
+}
+.leg-block{
+  display: flex;
+  max-width: 260px;
+  min-height: 30px;
+}
+
 .filter legend {
+  display: block;
+  flex-wrap: wrap;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -530,6 +556,12 @@ position: relative;
   margin: 0;
   margin-bottom: 54px;
   border: none;
+
+}
+
+.filter-item{
+min-height: 70px;
+
 }
 .filter .fl-centr{
   margin-bottom: 28px;
@@ -571,7 +603,8 @@ position: relative;
   background:var(--basic-head);
   border: none;
   text-transform: uppercase;
-  padding: 17px 89px 15px 88px;
+  padding: 17px 89px;
+  border-radius: 4px;
 }
 .filter-button:hover{
   background: var(--basic-butfilterhover);
@@ -662,11 +695,11 @@ position: relative;
   justify-content: space-between;
   padding-left: 0px;
   margin-left: 50px;
-  height: 70px;
+  min-height: 70px;
 }
 
 .filterfeatures h2{
-
+  width: 100%;
   margin-top: 13px;
   font-style: normal;
   font-weight: bold;
@@ -692,9 +725,12 @@ position: relative;
 
 }
 .filterfeatures-left{
-  width: 144px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 10px;
   margin-left: 2px;
-  height: 70px;
+  min-height: 40px;
 }
 
 .filterfeatures-item {
@@ -883,10 +919,10 @@ margin-left: 20px;
 .pagination-list {
 
   margin-top: -4px;
-  height: 60px;
+  height: 50px;
   display: flex;
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   margin-left: 0;
   width: 750px;
 }
@@ -895,21 +931,16 @@ margin-left: 20px;
 
   display: flex;
   flex-wrap: wrap;
-  width: 50px;
-  height: 50px;
-  margin-right: 11px;
+  margin-right: 12px;
 
 }
 
 
 .pagination-item a{
-
-  display: flex;
-  flex-wrap: wrap;
-  width: 50px;
-  height: 35px;
   padding-left: 20px;
   padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -923,10 +954,10 @@ margin-left: 20px;
 
   display: flex;
   flex-wrap: wrap;
-  width: 183px;
-  height: 35px;
   padding-left: 78px;
   padding-top: 17px;
+  padding-right: 77px;
+  padding-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -961,17 +992,16 @@ margin-left: 20px;
 .pagination-item-current {
   margin-left: 13px;
   margin-right: 11px;
-  width: 50px;
-  height: 50px;
+
 }
 
 .pagination-item-current a{
   display: flex;
   flex-wrap: wrap;
-  width: 50px;
-  height: 52px;
   padding-left: 18px;
-  padding-top: 15px;
+  padding-top: 14px;
+  padding-right: 15px;
+  padding-bottom: 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1376,8 +1406,6 @@ margin-left: 20px;
   display: block;
   height: 416px;
   position:absolute;
-
-  /*margin: 0 auto;*/
   padding: 0;
   object-fit: cover;
   overflow-x: hidden;

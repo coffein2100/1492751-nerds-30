@@ -6,7 +6,7 @@
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/minimaze.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -61,9 +61,10 @@
     </section>
 
     <section class="productfilter">
+      <div class="filt-container">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
-          <legend>Стоимость:</legend>
+          <legend class="leg-block">Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -83,7 +84,7 @@
             </div>
         </fieldset>
         <fieldset class="fl-centr">
-          <legend>Сетка:</legend>
+          <legend class="leg-block">Сетка:</legend>
           <ul>
             <li class="filter-option filter-radio">
             <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked>
@@ -100,7 +101,7 @@
           </ul>
         </fieldset>
         <fieldset class="fl-bottom">
-          <legend>Особенности:</legend>
+          <legend class="leg-block">Особенности:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slayder" id="filter-slayder" checked>
@@ -126,6 +127,7 @@
         </fieldset>
         <button class="filter-button" type="submit">Показать</button>
       </form>
+    </div>
     </section>
 
 
@@ -204,9 +206,6 @@
         </li>
       </ul>
     </section>
-
-
-
 
     <section class="modal-latters">
       <div class="modal-container">
