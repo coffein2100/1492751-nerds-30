@@ -63,6 +63,7 @@
 }
 
 /*filters*/
+
 .filter-option label {
   position: relative;
   display: block;
@@ -93,7 +94,11 @@
   background-position: 0 0;
   opacity: 0;
 }
-.filter-input-checkbox:not(:disabled):not(:checked)+label:hover::before{opacity: 1;}
+.filter-input-checkbox:not(:disabled):not(:checked)+label:hover::before,
+.filter-input-checkbox:not(:disabled):not(:checked)+label:focus::before
+  {opacity: 1;}
+
+
 
 .filter-input-checkbox:checked + label::after {/*выбранный чекбокс*/
   content: "";
@@ -109,7 +114,10 @@
   border: none;
   opacity: 0.4;
 }
-.filter-input-checkbox:not(:disabled):checked+label:hover::after{opacity: 1;}
+.filter-input-checkbox:not(:disabled):checked+label:hover::after,
+.filter-input-checkbox:not(:disabled):checked+label:focus::after
+  {opacity: 1;}
+
 
 .filter-input-radio + label::before {
   content: "";
@@ -135,17 +143,22 @@
   border-radius: 50%;
   opacity: 0.4;
 }
-.filter-input-radio:not(:disabled):not(:checked)+label:hover::before{
+.filter-input-radio:not(:disabled):not(:checked)+label:hover::before,
+.filter-input-radio:not(:disabled):not(:checked)+label:focus::before{
   opacity: 1;
 }
 
-.filter-input-radio:not(:disabled):checked+label:hover::before{
+
+.filter-input-radio:not(:disabled):checked+label:hover::before,
+.filter-input-radio:not(:disabled):checked+label:focus::before{
   opacity: 1;
 }
 
-.filter-input-radio:not(:disabled):checked+label:hover::after{
+.filter-input-radio:not(:disabled):checked+label:hover::after,
+.filter-input-radio:not(:disabled):checked+label:focus::after{
   opacity: 1;
 }
+
 
 a {
   text-decoration: none;
@@ -1365,9 +1378,12 @@ margin-left: 20px;
   color: inherit;
   border-radius: 50%;
 }
-.social-button:hover{
+.social-button:hover,
+.social-button:focus{
   background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 }
+
+
 .social-button:active{
   background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
