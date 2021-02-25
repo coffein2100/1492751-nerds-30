@@ -31,11 +31,55 @@
   --basic-chekbox:#4D4D4D;
   }
 
+
+/*animation*/
+
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /* Global */
 
 .page-body{
   position: relative;
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -46,7 +90,7 @@
   min-width: 1200px;
   min-height: 1925px;
   display: grid;
-  align-content: center;
+  align-content: start;
 }
 
 .visually-hidden {
@@ -761,11 +805,13 @@ margin-left: 20px;
 
 }
 .cap-rotate{
+
   opacity: 0.2;
   display: block;
-  transform: rotate(180deg);
+  transform:translateY(7px) rotate(180deg);
 }
 .cap-left{
+  padding-top: 6px;
   display: block;
   opacity: 1;
 }
@@ -784,7 +830,7 @@ margin-left: 20px;
 }
 
 
-.filterfeatures-item a{
+.filterfeatures-nocurrent{
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -794,6 +840,12 @@ margin-left: 20px;
   opacity: 0.3;
 }
 .filterfeatures-item .current{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
   opacity: 1;
   margin-left:25px;
 }
@@ -831,13 +883,24 @@ margin-left: 20px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: 618px;
+  min-height: 618px;
   background: var(--basic-head);
   border:1px solid var(--basic-slidbtn);
   border-radius: 3px;
   border-top: none;
   margin-left: 0;
 }
+
+.layouts-item::before{
+  display: block;
+  content: "";
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/headproduct.png");
+  opacity: 0.12;
+
+}
+
 .mask{
   opacity: 0;
   display: flex;
@@ -851,20 +914,19 @@ margin-left: 20px;
   background: var(--basic-head);
 
 }
-.layouts-item:hover{
-
+.layouts-item:hover,
+.layouts-item:hover::before
+{
+  opacity: 1;
   box-shadow: -1px 25px 20px -4px rgba(34, 60, 80, 0.2);
 }
 .layouts-item:hover .mask{
   opacity: 1;
 }
-.layouts-item:hover .head-price{
+.layouts-item::before:hover{
   opacity: 1;
 }
 
-.head-price{
-  opacity: 0.12;
-}
 .heads-buy{
   display: inline-block;
   width: 100%;
@@ -1529,10 +1591,21 @@ margin-left: 20px;
 
 /*modal*/
 
+.show{
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-latters{
-  position:absolute;
-  top:1706px;
-  left: 120px;
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   width: 960px;
   height: 590px;
   background: var(--basic-white);

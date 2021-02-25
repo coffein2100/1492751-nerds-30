@@ -52,11 +52,12 @@
       <div class="filterfeatures-right">
         <ul class="filterfeatures-list">
           <li class="filterfeatures-item"><a class="current" href="#">По цене</a></li>
-          <li class="filterfeatures-item"><a href="#">По типу</a></li>
-          <li class="filterfeatures-item"><a href="#">По названию</a></li>
+          <li class="filterfeatures-item"><a class="filterfeatures-nocurrent" href="#">По типу</a></li>
+          <li class="filterfeatures-item"><a class="filterfeatures-nocurrent" href="#">По названию</a></li>
           <li class="filterfeatures-item capture">
-            <img class="cap-left" src="img/filtercapture.svg" width="11" height="10" alt="figure" tabindex="0">
-            <img class="cap-rotate" src="img/filtercapture.svg" width="11" height="10" alt="figure" tabindex="0"></li>
+            <a href="#"><img class="cap-left" src="img/filtercapture.svg" width="11" height="10" alt="figure" ></a>
+            <a href="#"><img class="cap-rotate" src="img/filtercapture.svg" width="11" height="10" alt="figure"></a>
+            </li>
       </ul>
       </div>
     </section>
@@ -67,7 +68,7 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
         <fieldset class="filter-item">
           <legend class="leg-block">Стоимость:</legend>
-            <div class="range-filter">
+            <div class="range-filter" aria-label="Диапозон цен макетов">
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
@@ -88,17 +89,17 @@
         <fieldset class="fl-centr">
           <legend class="leg-block">Сетка:</legend>
           <ul>
-            <li class="filter-option filter-radio">
-            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked>
-            <label for="filter-adaptive" >Адаптивная</label>
+            <li class="filter-option filter-radio" >
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="adapt" id="filter-adaptive" checked >
+            <label for="filter-adaptive" tabindex="0">Адаптивная</label>
             </li>
             <li class="filter-option filter-radio">
             <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="fix" id="filter-fix">
-            <label for="filter-fix">Фиксированная</label>
+            <label for="filter-fix" tabindex="0">Фиксированная</label>
             </li>
             <li class="filter-option filter-radio">
               <input class="visually-hidden filter-input-radio filter-input" type="radio" name="adaptive" value="flex" id="filter-flex">
-              <label for="filter-flex">Резиновая</label>
+              <label for="filter-flex" tabindex="0">Резиновая</label>
               </li>
           </ul>
         </fieldset>
@@ -107,23 +108,23 @@
           <ul>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slayder" id="filter-slayder" checked>
-              <label for="filter-slayder">Слайдер</label>
+              <label for="filter-slayder" tabindex="0">Слайдер</label>
             </li>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block" id="filter-block">
-              <label for="filter-block">Блок преимуществ</label>
+              <label for="filter-block" tabindex="0">Блок преимуществ</label>
             </li>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+              <label for="filter-news" tabindex="0">Новости</label>
             </li>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="galery" id="filter-galery">
-              <label for="filter-galery">Галерея</label>
+              <label for="filter-galery" tabindex="0">Галерея</label>
             </li>
             <li class="filter-option filter-checkbox" >
               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+              <label for="filter-basket" tabindex="0">Корзина</label>
             </li>
           </ul>
         </fieldset>
@@ -138,7 +139,7 @@
       <h2 class="visually-hidden">презентация макетов</h2>
       <ul class="layouts-list">
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="359" height="40" alt="шапка меню">
+
           <img src="img/present-sedona.png" width="358" height="576" alt="Sedona">
             <div class="mask">
             <a class="heads-buy" href="#">Sedona</a>
@@ -148,7 +149,7 @@
           </div>
         </li>
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="359" height="40" alt="шапка меню">
+
           <img src="img/present-pink.png" width="358" height="576" alt="Pink">
             <div class="mask">
               <a class="heads-buy" href="#">Pink App</a>
@@ -158,7 +159,7 @@
             </div>
         </li>
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="358" height="40" alt="шапка меню">
+
           <img src="img/present-barbershop.png" width="358" height="576" alt="Barbershop">
           <div class="mask">
             <a class="heads-buy" href="#">Barbershop</a>
@@ -167,7 +168,7 @@
           </div>
         </li>
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="358" height="40" alt="шапка меню">
+
           <img src="img/present-mishka.png" width="358" height="576" alt="MISHKA">
           <div class="mask">
             <a class="heads-buy" href="#">MISHKA</a>
@@ -176,7 +177,7 @@
           </div>
         </li>
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="358" height="40" alt="шапка меню">
+
           <img src="img/present-aplus.png" width="358" height="576" alt="A Plus">
           <div class="mask">
             <a class="heads-buy" href="#">A Plus</a>
@@ -185,7 +186,7 @@
           </div>
         </li>
         <li class="layouts-item">
-          <img class="head-price" src="img/headproduct.png" width="358" height="40" alt="шапка меню">
+        <!-- <img class="head-price" src="img/headproduct.png" width="358" height="40" alt="шапка меню">-->
           <img src="img/present-kvast.png" width="358" height="576" alt="KBACT">
           <div class="mask">
             <a class="heads-buy" href="#">KBACT</a>
