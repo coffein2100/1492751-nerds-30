@@ -154,14 +154,14 @@
           <form class="modal-form" id="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="modal-left">
               <label class="modal-name" for="firstname">Ваше имя:</label>
-              <input class="modal-input" id="firstname" type="text" name="person" placeholder="Имя Фамилия">
+              <input class="modal-input person" id="firstname" type="text" name="person" placeholder="Имя Фамилия">
             </div>
             <div class="modal-right">
               <label class="modal-name" for="email">Ваш email:</label>
-              <input class="modal-input" id="email" type="email" placeholder="email@example.com ">
+              <input class="modal-input email" id="email" type="email" name="email" placeholder="email@example.com">
             </div>
             <label class="modal-name" for="text">Текст письма:</label>
-            <textarea class="modal-inputbig" rows="10" id="text" placeholder="В свободной форме" form="modal-form"></textarea>
+            <textarea class="modal-inputbig" rows="10" id="text" name="laters" placeholder="В свободной форме" form="modal-form" ></textarea>
             <button class="modal-btn" type="submit">Отправить</button>
         </form>
 
@@ -225,7 +225,7 @@
       </div>
     </footer>
 
-
+    <script src="js/js-mini.js"></script>
 
   </body>
 </html>
