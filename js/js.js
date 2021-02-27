@@ -26,6 +26,8 @@ formClose.addEventListener("click", function (evt) {
 loginForm.addEventListener("submit", function (evt) {
   if (!firstname.value || !useremail.value || !latters.value ) {
     evt.preventDefault();
+    loginPopup.classList.remove("modal-error");
+    loginPopup.offsetWidth = loginPopup.offsetWidth;
     loginPopup.classList.add("modal-error");
   }else {
     localStorage.setItem("name", firstname.value);

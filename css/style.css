@@ -1641,11 +1641,13 @@ margin-left: 20px;
   margin-bottom: 20px;
 }
 .modal-input{
+  padding-left: 16px;
   width:360px;
   height: 50px;
   border: 2px solid #D7DCDE;
   box-sizing: border-box;
   border-radius: 3px;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1653,6 +1655,8 @@ margin-left: 20px;
   color: var(--basic-footer);
 }
 .modal-inputbig{
+  padding-top:16px;
+  padding-left: 16px;
   width:760px;
   height: 118px;
   border: 2px solid #D7DCDE;
