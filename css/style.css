@@ -74,7 +74,7 @@
   position: relative;
   margin: auto;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -375,7 +375,7 @@ img {
 
 .slide-title {
   padding-top: 30px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
@@ -881,6 +881,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-height: 618px;
+  max-height: 100%;
   background: var(--basic-head);
   border: 1px solid var(--basic-slidbtn);
   border-radius: 3px;
@@ -898,15 +899,16 @@ img {
 }
 
 .mask {
+  display: none;
   opacity: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   position: absolute;
   bottom: 0;
-  width: 358px;
+  max-width: 358px;
   min-height: 230px;
-  max-height: 618px;
+  max-height: 100%;
   background: var(--basic-head);
 }
 
@@ -1217,7 +1219,6 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
-  ;
 }
 
 .presentation p {
@@ -1234,12 +1235,23 @@ img {
 }
 
 .presentation-item {
-  display: block;
-  background: url("../img/marker.svg") no-repeat left center;
+  position: relative;
+  margin-top: -1px;
   padding-left: 35px;
   margin-right: 150px;
   margin-left: -39px;
   margin-bottom: 24px;
+}
+
+.presentation-item::before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0px;
+  height: 2px;
+  width: 25px;
+  background-color: var(--basic-nav);
 }
 
 /*features*/
@@ -1335,7 +1347,7 @@ img {
 /*partners*/
 
 .partners {
-  height: 177px;
+  height: 180px;
   margin-bottom: 80px;
   border-bottom: 2px solid var(--basic-head);
   border-top: 2px solid var(--basic-head);
@@ -1355,7 +1367,7 @@ img {
   display: block;
   content: "";
   position: absolute;
-  top: 60px;
+  top: 64px;
   left: 300px;
   height: 52px;
   width: 2px;
@@ -1366,7 +1378,7 @@ img {
   display: block;
   content: "";
   position: absolute;
-  top: 60px;
+  top: 64px;
   left: 600px;
   height: 52px;
   width: 2px;
@@ -1377,7 +1389,7 @@ img {
   display: block;
   content: "";
   position: absolute;
-  top: 60px;
+  top: 64px;
   left: 900px;
   height: 52px;
   width: 2px;
@@ -1394,22 +1406,22 @@ img {
 }
 
 .partners-html {
-  margin-top: 53px;
+  margin-top: 56px;
   margin-left: 10px;
 }
 
 .partners-borod {
-  margin-top: 40px;
-  margin-left: 15px;
+  margin-top: 45px;
+  margin-left: 17px;
 }
 
 .partners-pink {
-  margin-top: 40px;
-  margin-left: 25px;
+  margin-top: 45px;
+  margin-left: 28px;
 }
 
 .partners-mishka {
-  margin-top: 50px;
+  margin-top: 52px;
   margin-left: 35px;
 }
 
@@ -1679,7 +1691,7 @@ img {
   border: 2px solid #D7DCDE;
   box-sizing: border-box;
   border-radius: 3px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
