@@ -423,6 +423,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -908,7 +909,6 @@ img {
   bottom: 0;
   max-width: 358px;
   min-height: 230px;
-  max-height: 100%;
   background: var(--basic-head);
 }
 
@@ -928,6 +928,7 @@ img {
 
 .heads-buy {
   display: inline-block;
+  vertical-align: auto;
   width: 100%;
   font-style: normal;
   font-weight: bold;
@@ -951,6 +952,7 @@ img {
 
 .product-info {
   display: inline-block;
+  vertical-align: auto;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -1371,7 +1373,7 @@ img {
   left: 300px;
   height: 52px;
   width: 2px;
-  background-color: var(--basic-specional);
+  background-color: var(--basic-head);
 }
 
 .partners li:nth-child(2)::after {
@@ -1382,7 +1384,7 @@ img {
   left: 600px;
   height: 52px;
   width: 2px;
-  background-color: var(--basic-specional);
+  background-color: var(--basic-head);
 }
 
 .partners li:nth-child(3)::after {
@@ -1393,7 +1395,7 @@ img {
   left: 900px;
   height: 52px;
   width: 2px;
-  background-color: var(--basic-specional);
+  background-color: var(--basic-head);
 }
 
 /*img*/
@@ -1402,34 +1404,43 @@ img {
   display: block;
   margin: auto;
   align-items: center;
-  opacity: 0.2;
 }
 
 .partners-html {
   margin-top: 56px;
   margin-left: 10px;
+  opacity: 0.2;
 }
 
 .partners-borod {
   margin-top: 45px;
   margin-left: 17px;
+  opacity: 0.2;
 }
 
 .partners-pink {
   margin-top: 45px;
   margin-left: 28px;
+  opacity: 0.2;
 }
 
 .partners-mishka {
   margin-top: 52px;
   margin-left: 35px;
+  opacity: 0.2;
 }
 
-.partners-item:hover {
+.partners-html:hover,
+.partners-borod:hover,
+.partners-pink:hover,
+.partners-mishka:hover {
   opacity: 1;
 }
 
-.partners-item:active {
+.partners-html:active,
+.partners-borod:active,
+.partners-pink:active,
+.partners-mishka:active {
   opacity: 0.1;
 }
 
