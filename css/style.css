@@ -266,8 +266,8 @@ img {
   margin-left: 202px;
   display: flex;
   flex-wrap: wrap;
-  width: 437px;
-  height: 45px;
+  min-width: 437px;
+  min-height: 45px;
   list-style: none;
   font-weight: normal;
   width: 500px;
