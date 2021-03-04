@@ -883,6 +883,7 @@ img {
   flex-wrap: wrap;
   min-height: 618px;
   max-height: 100%;
+  width: 358px;
   background: var(--basic-head);
   border: 1px solid var(--basic-slidbtn);
   border-radius: 3px;
@@ -900,7 +901,6 @@ img {
 }
 
 .mask {
-  display: none;
   opacity: 0;
   display: flex;
   flex-wrap: wrap;
