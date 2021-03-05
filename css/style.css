@@ -423,7 +423,7 @@ img {
 
 .button {
   display: inline-block;
-  vertical-align: auto;
+  vertical-align: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -929,7 +929,7 @@ img {
 
 .heads-buy {
   display: inline-block;
-  vertical-align: auto;
+  vertical-align: inherit;
   width: 100%;
   font-style: normal;
   font-weight: bold;
