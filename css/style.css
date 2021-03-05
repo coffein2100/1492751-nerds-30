@@ -908,8 +908,9 @@ img {
   position: absolute;
   bottom: 0;
   max-width: 358px;
-  min-height: 230px;
+  max-height: 618px;
   background: var(--basic-head);
+  overflow:auto;
 }
 
 .layouts-item:hover,
@@ -934,10 +935,10 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
-  padding-left: 10px;
+  text-align: center;
+  padding-left: 25px;
   padding-right: 10px;
   margin-top: 25px;
 }
@@ -951,21 +952,21 @@ img {
 }
 
 .product-info {
-  display: inline-block;
-  vertical-align: auto;
+  display: block;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-specional);
   text-align: center;
   width: 100%;
+  margin-top: 14px;
   margin-bottom: 32px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 35px;
+  padding-right: 22px;
 }
 
 .button-catalog {
-  padding: 17px 70px 13px 72px;
+  padding: 17px 71px 15px 72px;
   color: var(--basic-white);
   background: var(--basic-butleft);
   font-style: normal;
@@ -977,7 +978,7 @@ img {
   cursor: pointer;
   border-radius: 3px;
   margin-left: 80px;
-  margin-right: 80px;
+  margin-right: 30px;
   margin-bottom: 43px;
 }
 
